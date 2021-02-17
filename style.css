@@ -1,20 +1,12 @@
 
 body
 {
-	/* background-image: url("images/background.jpg");
-	background-size: 1366px auto;
-	background-repeat: no-repeat; */
 	font-family: 'Varela Round', sans-serif !important;
-	font-size: 12px;
+	font-size: 13px;
 }
 
-.font-family{
-	-webkit-appearance: none !important;
-	font-family: 'Varela Round', sans-serif !important;
-}
-
-.row{
-	margin: 0px !important;
+.navbar-hidden{
+  display: none;
 }
 
 #billing-bck{
@@ -43,23 +35,75 @@ body
 
 ::placeholder
 {
-	font-size: 13px;
+	font-size: 13px !important;
 	color: #4a4a48 !important;
 }
 
-.btn-block + .btn-block {
-    margin-top: 0px;
+
+.login-img{
+	position: relative;
+	padding: 1rem;
+	background: linear-gradient(-45deg, #4481eb, #04befe);
+	border-bottom-right-radius: 500px !important;
+	height: 665px;
+}
+
+.login-back{
+	margin-top: 80px;
+	height: 400px;
+	width: 400px;
 }
 
 .login-background
 {
-	background-color: white;
 	height: auto;
 	width: auto;
-	margin: 44px 30px 0px 30px;
-	padding: 30px 50px 20px 50px;
-	box-shadow:0px 0px 10px 5px #75cfb8;
-	border-radius: 0px;
+	padding: 100px 165px !important;
+}
+
+.login-reg{
+	margin-top: 40px !important;
+	margin-left: -30px;
+}
+
+.login-image{
+	height: 150px;
+	width: 150px;
+}
+
+.signup-img{
+	position: relative;
+	background-color: #00b74a;
+	border-bottom-left-radius: 500px !important;
+	height: 665px;
+	padding-left: 100px !important;
+}
+
+.signup-back{
+	margin-top: 100px;
+	height: 270px;
+	width: 270px;
+}
+
+.signup-reg{
+	margin-top: 30px !important;
+	margin-left: -30px;
+}
+
+.signup-background
+{
+	height: auto;
+	width: auto;
+	padding: 50px 165px !important;
+}
+
+.signup-image{
+	height: 120px;
+	width: 120px;
+}
+
+.signup-login-btn{
+    margin-bottom: 20px;
 }
 
 .register-background
@@ -68,7 +112,7 @@ body
 	height: auto;
 	width: auto;
 	margin: 40px 30px 0px 30px;
-	padding: 30px 70px 40px 70px;
+	padding: 24px 70px 33px 70px;
 	box-shadow:0px 0px 10px 5px #75cfb8;
 	border-radius: 0px;
 }
@@ -78,7 +122,18 @@ body
 	background-color: white;
 	height: auto;
 	width: auto;
-	margin: 77px 30px 0px 30px;
+	margin: 90px 30px 114px 30px !important;
+	padding: 25px 60px 20px 60px;
+	box-shadow:0px 0px 10px 5px #ffdcdc;
+	border-radius: 0px;
+}
+
+.fbill-background
+{
+	background-color: white;
+	height: auto;
+	width: 600px;
+	margin: 90px 30px 114px 30px !important;
 	padding: 25px 60px 20px 60px;
 	box-shadow:0px 0px 10px 5px #ffdcdc;
 	border-radius: 0px;
@@ -89,7 +144,7 @@ body
 	background-color: white;
 	height: auto;
 	width: auto;
-	margin: 80px 30px 0px 30px;
+	margin: 100px 30px 50px 30px;
 	padding: 30px 70px 50px 70px;
 	box-shadow:0px 0px 10px 5px #00917c;
 	border-radius: 0px;
@@ -100,10 +155,22 @@ body
 	background-color: white;
 	height: auto;
 	width: 700px;
-	margin: 80px 30px 0px 30px;
+	margin: 100px 30px 0px 30px;
 	padding: 30px 50px 50px 50px;
 	box-shadow:0px 0px 10px 5px #c1a1d3;
 	border-radius: 0px;
+}
+
+.farmerlist{
+	padding: 130px 0px 130px 0px !important;
+}
+
+.billinglist{
+	padding: 100px 30px 100px 30px !important;
+}
+
+.billinglist-note{
+	text-align: right !important;
 }
 
 .login-borders{
@@ -125,7 +192,7 @@ a{
 }
 
 #myDiv {
-  animation: mymove 10s infinite;
+  animation: mymove 20s infinite;
 }
 
 @keyframes mymove {
@@ -134,6 +201,12 @@ a{
   50% {background-color: #f67280;}
   75% {background-color: #cdeeaa;}
   100% {background-color: #317ae1;}
+}
+
+
+.farmerlisttable{
+	margin-top: 100px !important;
+	margin-bottom: 100px !important;
 }
 
 .nav-item-m{
@@ -157,71 +230,133 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important;
+    background: url("images/down-arrow.png") white no-repeat 96% !important;
+    font-size: 16px !important;
 }
 
-/* The container */
-.radiobtn {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 17px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.alert{
+	padding: 6px 14px !important;
+	font-size: 13px !important;
+	margin-top: -16px;
+	border-radius: 0px !important;
 }
 
-/* Hide the browser's default radio button */
-.radiobtn input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+.alert-dismissible .close {
+    position: absolute;
+    top: -9px;
+    right: -10px;
+    padding: .75rem 1.25rem;
+    color: inherit;
+    font-size: 22px;
 }
 
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
+thead{
+	font-size: 15px;
+	background-color: #222831;
+	color: #ffffff;
 }
 
-/* On mouse-over, add a grey background color */
-.radiobtn:hover input ~ .checkmark {
-  background-color: #ccc;
+tfoot{
+	font-size: 15px !important;
 }
 
-/* When the radio button is checked, add a blue background */
-.radiobtn input:checked ~ .checkmark {
-  background-color: #2196F3;
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: .5em;
+    display: inline-block;
+    width: auto;
+    border-radius: 0px;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+div.dataTables_wrapper div.dataTables_length select {
+    width: auto;
+    display: inline-block;
+    border-radius: 0px;
 }
 
-/* Show the indicator (dot/circle) when checked */
-.radiobtn input:checked ~ .checkmark:after {
-  display: block;
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+    border: ;
+    border-radius: 0px;
 }
 
-/* Style the indicator (dot/circle) */
-.radiobtn .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+.form-control.form-control-sm {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+
+.btn-block + .btn-block {
+    margin-top: 0px !important;
+}
+
+.table{
+	font-size: 14px !important;
+}
+
+.form-control{
+	font-size: 18px !important;
+}
+
+.input-group > .form-control {
+    height: calc(2.08rem + 10px) !important;
+}
+
+.btn {
+    font-size: 14px !important;
+}
+
+table.dataTable tbody td {
+  border-bottom: 1px solid #dee2e6 !important;
+  padding: 10px !important;
+}
+
+table.dataTable thead th {
+  padding: 11px 30px !important;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 15px 0px !important;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+.page-item .page-link {
+    padding: 8px 17px !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: inherit !important;
+    z-index: 1000;
+    display: none;
+    min-width: 7rem !important;
+    padding: 0px !important;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0px !important;
+    font-size: 16px !important;
+}
+
+button.dt-button, div.dt-button, a.dt-button, input.dt-button {
+    margin-right: 1rem !important;
+    margin-top: 1em !important; 
+    margin-bottom: 30px !important; 
+    padding: 4px 2em !important;
+    border-radius: 0px !important;
+    font-size: 14px !important;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: .85em;
+    margin: 0px 0px -45px 0px !important;
 }
 
 @media (max-width: 512px){
@@ -255,5 +390,96 @@ select {
 	}
 	.nav-item-m{
 		margin-left: 0rem !important;
+	}
+
+	.billinglist-note{
+		text-align: center !important;
+	}
+
+	div.dataTables_wrapper div.dataTables_info {
+	    padding-top: .85em;
+	    margin: 0px !important;
+	}
+
+	.loimg{
+		position: relative;
+		padding: 1rem;
+		background: linear-gradient(-45deg, #4481eb, #04befe);
+		border-bottom-right-radius: 500px !important;
+		border-bottom-left-radius: 500px !important;
+		height: 200px;
+	}
+
+	.logback{
+		height: 150px;
+		width: 150px;
+	}
+}
+
+@media (max-width: 767px){
+
+	.login-background{
+		height: auto;
+		width: auto;
+		padding: 50px !important;
+	}
+
+	.login-img{
+		position: relative;
+		padding: 1rem;
+		background: linear-gradient(-45deg, #4481eb, #04befe);
+		border-bottom-right-radius: 500px !important;
+		border-bottom-left-radius: 500px !important;
+		height: 190px;
+	}
+
+	.login-back{
+		margin-top: 0px;
+		height: 150px;
+		width: 150px;
+	}
+
+	.login-reg{
+		margin-top: 0px !important;
+		margin-left: 0px;
+	}
+
+	.login-image{
+		height: 100px;
+		width: 100px;
+	}
+
+	.signup-img{
+		position: relative;
+		padding: 0px !important;
+		background-color: #F9A826;
+		border-bottom-left-radius: 0px !important;
+		border-top-right-radius: 500px !important;
+		border-top-left-radius: 500px !important;
+		height: 247px;
+	}
+
+	.signup-reg{
+		margin-top: 0px !important;
+		position: relative;
+	    top: -160px;
+	    margin-left: 0px;
+	}
+
+	.signup-back{
+		margin-top: 80px;
+		height: 150px;
+		width: 150px;
+		margin-bottom: -79px;
+	}
+
+	.signup-login-btn{
+	    margin-bottom: 15px;
+	}
+
+	.signup-background{
+		height: auto;
+		width: auto;
+		padding: 50px !important;
 	}
 }
