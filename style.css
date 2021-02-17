@@ -440,7 +440,7 @@ div.dataTables_wrapper div.dataTables_info {
 	}
 
 	.login-reg{
-		margin-top: 0px !important;
+		margin-top: 10px !important;
 		margin-left: 0px;
 	}
 
@@ -452,7 +452,7 @@ div.dataTables_wrapper div.dataTables_info {
 	.signup-img{
 		position: relative;
 		padding: 0px !important;
-		background-color: #F9A826;
+		background-color: #00b74a;
 		border-bottom-left-radius: 0px !important;
 		border-top-right-radius: 500px !important;
 		border-top-left-radius: 500px !important;
